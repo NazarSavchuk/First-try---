@@ -52,6 +52,7 @@ nav {
     transition: 0.2s;
 }
 .phone-number {
+    display: none;
     text-decoration: none;
     color: rgb(238, 238, 238);
     margin-right: 0;
