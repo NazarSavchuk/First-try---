@@ -1,0 +1,241 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+html {
+    max-width: 80%;
+}
+
+body {
+    background-color: rgb(55, 57, 46);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    line-height: 74px;
+    font-size: 18px;
+    color: rgb(213, 87, 59);
+}
+.header > h1 {
+    margin: 0;
+    background-color: rgb(55, 57, 46);
+    color: rgb(238, 238, 238);
+}
+nav {
+    margin: 0;
+    line-height: 74px;
+}
+.menu {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 4px;
+}
+.menu > ul {
+    margin-left: 40px;
+}
+
+.menu > li > a {
+    display: block;
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+.menu > li > a:hover {
+    background-color: rgb(213,87,59);
+    color: rgb(238, 238, 238);
+    transition: 0.2s;
+}
+.phone-number {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    margin-right: 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.item > img{
+    height: 540px;
+    width: 1000px;
+}
+/* slider */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+}
+.slider > .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -50px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    height: 50px;
+    border: none;
+    width: 40px;
+}
+.slider > .slick-arrow:active {
+    transform: translateY(2px);
+}
+.slider > .slick-arrow.slick-prev {
+    left: 15px;
+    background: url(../img/svg/arrow-left-solid.svg) 100% no-repeat;
+}
+
+.slider > .slick-arrow.slick-next {
+    right: 15px;
+    background: url(../img/svg/arrow-right-solid.svg) 100% no-repeat;
+}
+
+.slider > .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider > .slick-dots > li{
+    list-style: none;
+    margin: 0;
+}
+.slider > .slick-dots > li > button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0px 16px 0px 0px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    border:none;
+    transition: 0.2s;
+    
+}
+.slider > .slick-dots > li.slick-active > button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+/* slider-end */
+
+.slider {
+    margin-bottom: 50px;
+}
+
+.small__info {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(238, 238, 238);
+    margin-bottom: 50px;
+}
+.small__info > .about {
+    width:50%;
+    margin-left: 35px;
+    padding:0 65px;
+}
+.small__info > .about > h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.info__about {
+    background-image: url(../img/camera.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 20px 20px rgb(55, 57, 46);
+    transition: 200ms;
+    position: relative;
+}
+.info__about:hover {
+    opacity: 0.9;
+    transition: 500ms;
+}
+.info__about > .button__about {
+    width: 340px;
+    height: 64px;
+}
+.info__about > .button__about > button {
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 4px solid #fff;
+    transition: ease 200ms;
+}
+.info__about > .button__about > button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: ease 200ms;
+}
+.sectionHR {
+    background-color: rgb(213, 87, 59);
+    margin-bottom: 50px;
+    height: 2px;
+    border: none;
+}
+.add__info {
+    display: flex;
+    margin-bottom: 50px;
+}
+.add__row1 {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(238, 238, 238);
+}
+.add__row1 > .item__1 {
+    text-align: center;
+    padding: 0 130px;
+}
+.add__row1 > .item__1 > i {
+    font-size: 62px;
+    margin-bottom: 5px;
+}
+.add__row1 > .item__1 > h4{
+    font-size: 26px;
+}
+.add__row1 > .item__2 {
+    text-align: center;
+    padding: 0 130px;
+}
+.add__row1 > .item__2 > i {
+    font-size: 62px;
+    margin-bottom: 5px;
+}
+.add__row1 > .item__2 > h4{
+    font-size: 26px;
+}
+.add__row1 > .item__3 {
+    text-align: center;
+    padding: 0 130px;
+}
+.add__row1 > .item__3 > i {
+    font-size: 62px;
+    margin-bottom: 5px;
+}
+.add__row1 > .item__3 > h4{
+    font-size: 26px;
+}
+.adress__map {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(238, 238, 238);
+    margin-bottom: 50px;
+}
+.contact__main {
+    width: 50%;
+    padding: 10px 15px;
+}
+.contact__main h4{
+    font-size: 28px;
+}
