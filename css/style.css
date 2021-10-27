@@ -250,13 +250,11 @@ nav {
     -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
 }
-.why-us {
-    transform: translate(0, 120%);
-    opacity: 0;
-    transition:  all 0.5s ease 0s;
-}
 
-.why-us._active {
-    opacity: 1;
-    transform: translate(0, 0);
+
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color:blueviolet;
 }

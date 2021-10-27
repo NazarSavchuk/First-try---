@@ -12,3 +12,14 @@ $(document).ready(function(){
     });
 })
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".square", {
+    scrollTrigger: {
+        trigger: ".square",
+        toggleActions: "restart none none none"
+    },
+    x: 400,
+    rotation: 360,
+    duration: 3,
+})
