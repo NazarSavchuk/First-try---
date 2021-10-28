@@ -258,3 +258,9 @@ nav {
     height: 150px;
     background-color:blueviolet;
 }
+
+.animateme {
+    width: 30vh;
+    height: 30vh;
+    background-color: burlywood;
+}
