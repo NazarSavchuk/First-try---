@@ -252,15 +252,11 @@ nav {
 }
 
 
-
-.square {
-    width: 150px;
-    height: 150px;
-    background-color:blueviolet;
-}
-
-.animateme {
-    width: 30vh;
-    height: 30vh;
-    background-color: burlywood;
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgb(55, 57, 46);
+    z-index: 10;
+    transition: 0.2s;
 }
