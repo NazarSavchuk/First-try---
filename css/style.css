@@ -61,7 +61,7 @@ nav {
 
 .item > img{
     height: 540px;
-    width: 1000px;
+    width: rgb(238, 238, 238)px;
 }
 /* slider */
 .slick-track {
@@ -78,7 +78,7 @@ nav {
     position: absolute;
     top: 50%;
     margin: -50px 0 0 0;
-    z-index: 10;
+    z-index: 5;
     font-size: 0;
     height: 50px;
     border: none;
@@ -123,6 +123,8 @@ nav {
     border: 1px solid #fff;
     transition: 0.2s;
 }
+
+
 /* slider-end */
 
 .slider {
@@ -139,7 +141,10 @@ nav {
     width:50%;
     margin-left: 35px;
     padding:0 65px;
+    
 }
+
+
 .small__info > .about > h3 {
     text-align: center;
     margin-bottom: 15px;
@@ -259,4 +264,135 @@ nav {
     background-color: rgb(55, 57, 46);
     z-index: 10;
     transition: 0.2s;
+}
+.about.scrollAnimateItem {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: ease 0.3s;
+}
+.about.scrollAnimateItem.animation-class{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: ease 0.3s;
+}
+.info__about.scrollAnimateItem {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: ease 0.3s;
+}
+.info__about.scrollAnimateItem.animation-class {
+    transform: translateX(0);
+    opacity: 0.6;
+    transition: ease 0.3s;
+}
+.item__1.scrollAnimateItem {
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: ease 0.2s;
+}
+.item__2.scrollAnimateItem{
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: ease 0.2s;
+}
+.item__3.scrollAnimateItem{
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: ease 0.2s;
+}
+.item__1.scrollAnimateItem.animation-class{
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease 0.2s;
+}
+.item__2.scrollAnimateItem.animation-class{
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease 0.2s;
+    transition-delay: 0.2s;
+}
+.item__3.scrollAnimateItem.animation-class{
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease 0.2s;
+    transition-delay: 0.4s;
+}
+.adress__map.scrollAnimateItem {
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: ease 0.3s;
+}
+.adress__map.scrollAnimateItem.animation-class {
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease 0.3s;
+} 
+
+
+
+/* Social media styles are here*/
+
+
+.social-media-title {
+    font-size: 32px;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.social-media-links {
+    font-size: 26px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.social-link a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+ 
+.social-link a:hover {
+    -moz-box-shadow: 0 0 20px rgb(238, 238, 238);
+    -webkit-box-shadow: 0 0 20px rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgb(238, 238, 238);
+    transition: ease 0.2s;
+}
+
+.telegram-link a {
+    color: #0088cc;
+}
+
+.telegram-link a {
+    color: #0088cc;
+}
+
+.instagram-link a {
+    color: #C13584;;
+}
+
+.facebook-link a {
+    color: #4267B2;
+}
+
+.linkedin-link a {
+    color: #2867B2;
+}
+
+.github-link a {
+    color: rgb(238, 238, 238);
+}
+
+.social-media-title.scrollAnimateItem, .social-media-links.scrollAnimateItem {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: ease 0.2s;
+}
+.social-media-title.scrollAnimateItem.animation-class, .social-media-links.scrollAnimateItem.animation-class {
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease 0.2s;
 }
