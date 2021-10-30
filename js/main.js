@@ -1,16 +1,28 @@
-$(document).ready(function(){
-    $('.slider').slick({
-        arrows:true,
-        dots:true,
-        adaptiveHeight:true,
-        slidesToShow:1,
-        slidesToScroll:1,
-        speed:300,
-        autoplay:true,
-        autoplaySpeed:3000,
-        
-    });
-})
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 500,
+    effect: 'slide',
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
         const mainSlider = document.querySelector('.slider');

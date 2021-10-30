@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nazar Savchuk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,12 +26,29 @@
         <a class="phone-number" href="tel:+380688217395">+380688217395</a>
     </header>
 
+
     <div class="slider">
-        <div class="item" id=""><img data-lazy="img/first.jpg" alt=""></div>
-        <div class="item" id=""><img data-lazy="img/second.jpg" alt=""></div>
-        <div class="item" id=""><img data-lazy="img/third.jpg" alt=""></div>
-        <div class="item" id=""><img data-lazy="img/fourth.jpg" alt=""></div>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/first.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/second.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/third.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/fourth.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
     </div>
+
 
     <hr class="sectionHR">
 
@@ -112,8 +131,7 @@
     
     <hr class="sectionHR">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e1af4116ac.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     
